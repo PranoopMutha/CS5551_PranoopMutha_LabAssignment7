@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionic Application</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="Welcome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+<style>
+.navbar{
+
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+body{
+    background: url('homepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand{
+    color:darkblue;
+    padding-left:40%;
+    font-family: Microsoft sans-serif;
+    font-size:50px;
+}
+
+.row{
+    width:60%;
+    margin-left:13%;
+    margin-top:5%;
+}
+.apiClass{
+    margin-top:10px;
+    color: darkblue;
+    text-shadow: darkblue;
+    padding-left: 40%;
+    font-size: 60px;
+}
+.btn{
+    font-size:10px;
+    font-family:"Microsoft Sans Serif";
+}
+#textToSpeech{
+    padding:5px;
+    background:#94b7f3
+}
+#gks,#TextToSpeechHeading{
+    font-weight:bold;
+    font-size:20px;
+}
+
+#speechToTextLogo{
+    height:75px;
+    width:75px;
+}
+
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-faded">
+
+    <h1 class="navbar-brand m-b-0">Welcome
+    </h1>
+</nav>
+<div class="row">
+<div class="col-md-12">
+    <div class="apiClass">
+        <span id="gks"><b>Google Knowledge Services</b></span>
+
+
+        <button type="submit" class="btn btn-primary" id="ksg" onclick="location.href='KnowledgeServicesGoogle.html'" class="btn btn-primary">Google Knowledge Services</button>
+    </div>
+    <div class="apiClass">
+        <span id="TextToSpeechHeading"><b>Speech to Text</b></span>
+
+    <img src="stticon.PNG" id="speechToTextLogo">
+
+        <button type="submit" class="btn btn-primary" id="textToSpeech" onclick="location.href='SpeechToText.html'" class="btn btn-primary">Speech to Text</button>
+
+    </div>
+    </div>
+
+</div>
+</body>
+</html>
